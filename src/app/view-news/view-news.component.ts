@@ -11,9 +11,11 @@ constructor(private api:ApiService){
   api.fetchNews().subscribe(
     (response)=>
     {
+      this.loading=false
       this.view=response;
     }
   )
 }
   view:any=[]
+  loading:boolean=true
 }
