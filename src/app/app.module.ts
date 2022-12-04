@@ -14,6 +14,10 @@ const myRoute:Routes=[
     path:"",
     component:AddNewsComponent
 
+  },
+  {
+    path:"view",
+    component:ViewNewsComponent
   }
 ]
 @NgModule({
